@@ -1,3 +1,235 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #1a1a1a;
+  color: #999999;
+}
+body a {
+  color: #999999;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header__brand {
+  color: #ffffff;
+  font-size: 3rem;
+}
+.header__navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header__navbar ul {
+    display: none;
+  }
+}
+.header__navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header__navbar ul li .active {
+  color: #6600ff;
+}
+.header__navbar ul li a:hover {
+  color: #6600ff;
+}
+.header__social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header__social-media ul {
+    display: none;
+  }
+}
+.header__social-media ul li {
+  margin: 0 1rem;
+}
+.header__social-media ul li a:hover {
+  color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery__card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+@media (max-width: 425px) {
+  .gallery__card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery__tittle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.gallery__btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery__btn:hover {
+  background-color: #ffffff;
+  color: #6600ff;
+}
+.gallery #card-1 {
+  background-image: url("../img/an.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/an.jpg");
+}
+.gallery #card-2 {
+  background-image: url("../img/nature2.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/nature2.jpg");
+}
+.gallery #card-3 {
+  background-image: url("../img/landsc.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/landsc.jpg");
+}
+.gallery #card-4 {
+  background-image: url("../img/cities.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/cities.jpg");
+}
+.gallery #card-5 {
+  background-image: url("../img/arch.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/arch.jpg");
+}
+.gallery #card-6 {
+  background-image: url("../img/decoration.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/decoration.jpg");
+}
+.gallery #card-7 {
+  background-image: url("../img/people2.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/people2.jpg");
+}
+.gallery #card-8 {
+  background-image: url("../img/sp.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/sp.jpg");
+}
+.gallery #card-9 {
+  background-image: url("../img/food.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url("../img/food.jpg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2.3rem;
+}
+footer span {
+  font-weight: bold;
+  color: #6600ff;
+}
 
 /*# sourceMappingURL=styles.css.map */
